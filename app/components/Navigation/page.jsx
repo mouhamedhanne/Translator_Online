@@ -6,8 +6,9 @@ import Logo from "@/app/Assets/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import BuyCoffe from "@/app/Assets/Svg/bmc-logo.svg";
+import { Ephesis } from "next/font/google";
 
-export default function page() {
+function page() {
   return (
     <header>
       <nav
@@ -44,6 +45,8 @@ export default function page() {
     </header>
   );
 }
+
+export default page;
 
 {
   /*
