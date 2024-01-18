@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/app/Assets/Logo";
+import Buttons from "@/app/ui/Buttons/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import BuyCoffe from "@/app/Assets/Svg/bmc-logo.svg";
@@ -35,14 +36,7 @@ function page() {
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
             <Link href="/">
-              <button
-                className="px-4 py-2 rounded-[10px] font-normal 
-                  text-[16px] bg-bg_button text-white
-                   hover:bg-hover_bg_button transition duration-300
-                    ease-in-out transform "
-              >
-                Connexion
-              </button>
+              <Buttons size="big">Connexion</Buttons>
             </Link>
           </div>
         </div>
