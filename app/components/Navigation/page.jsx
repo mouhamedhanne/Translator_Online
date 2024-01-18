@@ -35,7 +35,7 @@ export default function page() {
               {" "}
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
-            <Link href="/Inscription">
+            <Link href="/">
               <Buttons size="big">Connexion</Buttons>
             </Link>
           </div>
