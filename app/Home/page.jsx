@@ -8,9 +8,12 @@ export default function page() {
   return (
     <>
       <Navigation />
-      <HeroTop />
-      <Cta />
-      <Features />
+      <div className="max-w-6xl h-full m-auto">
+        <HeroTop />
+        <Cta />
+        <Features />
+      </div>
+
       <Footer />
     </>
   );
