@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
-import Buttons from "@/app/ui/buttons/page";
 import Link from "next/link";
 import Logo from "@/app/Assets/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import BuyCoffe from "@/app/Assets/Svg/bmc-logo.svg";
-import { Ephesis } from "next/font/google";
 
 function page() {
   return (
@@ -37,7 +35,14 @@ function page() {
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
             <Link href="/">
-              <Buttons size="big">Connexion</Buttons>
+              <button
+                className="px-4 py-2 rounded-[10px] font-normal 
+                  text-[16px] bg-bg_button text-white
+                   hover:bg-hover_bg_button transition duration-300
+                    ease-in-out transform "
+              >
+                Connexion
+              </button>
             </Link>
           </div>
         </div>
