@@ -36,7 +36,7 @@ function page() {
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
             <Link href="/">
-              <Buttons size="big">Connexion</Buttons>
+              <Buttons size="big">commancer</Buttons>
             </Link>
           </div>
         </div>
