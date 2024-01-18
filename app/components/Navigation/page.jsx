@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Buttons from "@/app/ui/buttons/page";
+import Buttons from "@/app/ui/buttons/page.tsx";
 import Link from "next/link";
 import Logo from "@/app/Assets/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,4 +1,10 @@
-export default function page({ size, className, children }) {
+interface pageProps {
+  size: "small" | "medium" | "big";
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function page({ size, className, children }: pageProps) {
   switch (size) {
     case "small":
       return (
