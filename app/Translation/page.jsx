@@ -1,7 +1,6 @@
 "use client";
-
-//import TranslationCard from "@/app/components/elements/TranslationCard/page";
 import Transform from "@/app/components/Newtest/Transform ";
+//import TranslationCard from "@/app/components/elements/TranslationCard/page";
 
 export default function page() {
   return (
