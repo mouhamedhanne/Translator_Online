@@ -22,7 +22,7 @@ export default function page() {
         text-xl font-bold bg-bg_button hover:bg-hover_bg_button 
         transition duration-300 ease-in-out transform text-white"
       >
-        Commancer
+        Commencer
       </Link>
     </div>
   );

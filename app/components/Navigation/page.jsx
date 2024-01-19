@@ -34,7 +34,7 @@ function page() {
               {" "}
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
-            <Link href="/">
+            <Link href="/Translation">
               <button
                 className="px-4 py-2 rounded-[10px] font-normal 
                  text-[16px] bg-bg_button text-white
