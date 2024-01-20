@@ -1,6 +1,10 @@
 //import Container from "@/app/components/Container/page";
 import Image from "next/image";
 import TraducteurDark from "@/app/Assets/Images/traducteur-dark.png";
+import Image1 from "@/app/Assets/Images/1.png";
+import Image2 from "@/app/Assets/Images/2.png";
+import Image3 from "@/app/Assets/Images/3.png";
+import Image4 from "@/app/Assets/Images/4.png";
 
 export default function page() {
   return (
@@ -31,80 +35,56 @@ export default function page() {
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/1.png"
-                alt="illustration"
-              />
+              <Image src={Image1} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/2.png"
-                alt="illustration"
-              />
+              <Image src={Image2} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/3.png"
-                alt="illustration"
-              />
+              <Image src={Image3} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/4.png"
-                alt="illustration"
-              />
+              <Image src={Image4} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/1.png"
-                alt="illustration"
-              />
+              <Image src={Image1} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/2.png"
-                alt="illustration"
-              />
+              <Image src={Image2} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/3.png"
-                alt="illustration"
-              />
+              <Image src={Image3} alt="illustration" />
             </span>
 
             <span
               className="flex relative h-10 w-10 shrink-0 
               overflow-hidden rounded-full -mr-4"
             >
-              <img
-                src="https://linkedleads.vercel.app/images/review/4.png"
-                alt="illustration"
-              />
+              <Image src={Image4} alt="illustration" />
             </span>
           </div>
           <div className="flex flex-col gap-0.5 text-yellow-500">

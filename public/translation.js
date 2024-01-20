@@ -1,4 +1,5 @@
-console.log("Translation JS file");
+//import pdfjsLib from "pdfjs-dist";
+
 const dropdowns = document.querySelectorAll(".dropdown-container"),
   inputLanguageDropdown = document.querySelector("#input-language"),
   outputLanguageDropdown = document.querySelector("#output-language");
@@ -136,13 +137,76 @@ downloadBtn.addEventListener("click", (e) => {
 });
 
 const darkModeCheckbox = document.getElementById("dark-mode-btn");
-
-darkModeCheckbox.addEventListener("change", () => {
+function toggleDarkMode() {
   document.body.classList.toggle("dark");
-});
+}
+darkModeCheckbox.addEventListener("change", toggleDarkMode);
+toggleDarkMode();
 
 const inputChars = document.querySelector("#input-chars");
 
 inputTextElem.addEventListener("input", (e) => {
   inputChars.innerHTML = inputTextElem.value.length;
 });
+
+/**
+  uploadDocument.addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if (
+      file.type === "application/pdf" ||
+      file.type === "text/plain" ||
+      file.type === "application/msword" ||
+      file.type ===
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ) {
+      uploadTitle.innerHTML = file.name;
+      const reader = new FileReader();
+      reader.readAsText(file);
+      reader.onload = (e) => {
+        inputTextElem.value = e.target.result;
+        translate();
+      };
+    } else {
+      alert("Please upload a valid file");
+    }
+  });
+**/
+
+/**
+ * uploadDocument.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+
+  if (file.type === "application/pdf") {
+    uploadTitle.innerHTML = file.name;
+
+    const reader = new FileReader();
+
+    reader.onload = async (e) => {
+      const data = new Uint8Array(e.target.result);
+      const loadingTask = pdfjsLib.getDocument(data);
+
+      try {
+        const pdf = await loadingTask.promise;
+        const numPages = pdf.numPages;
+        let text = "";
+
+        for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+          const page = await pdf.getPage(pageNum);
+          const content = await page.getTextContent();
+          const pageText = content.items.map((item) => item.str).join(" ");
+          text += pageText;
+        }
+
+        inputTextElem.value = text;
+        translate();
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    reader.readAsArrayBuffer(file);
+  } else {
+    alert("Please upload a valid PDF file");
+  }
+});
+ */
