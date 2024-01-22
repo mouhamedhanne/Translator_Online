@@ -1,5 +1,3 @@
-//import pdfjsLib from "pdfjs-dist";
-
 const dropdowns = document.querySelectorAll(".dropdown-container"),
   inputLanguageDropdown = document.querySelector("#input-language"),
   outputLanguageDropdown = document.querySelector("#output-language");
@@ -71,18 +69,28 @@ swapBtn.addEventListener("click", (e) => {
 
 function translate() {
   const inputText = inputTextElem.value;
-  const inputLanguage =
+  const inputLanguageCode =
     inputLanguageDropdown.querySelector(".selected").dataset.value;
-  const outputLanguage =
+  const outputLanguageCode =
     outputLanguageDropdown.querySelector(".selected").dataset.value;
-  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${inputLanguage}&tl=${outputLanguage}&dt=t&q=${encodeURI(
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${inputLanguageCode}&tl=${outputLanguageCode}&dt=t&q=${encodeURI(
     inputText
   )}`;
   fetch(url)
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
-      outputTextElem.value = json[0].map((item) => item[0]).join("");
+      console.log("Texte d'entrée:", inputText);
+      console.log("Texte traduit:", json[0].map((item) => item[0]).join(""));
+      const translatedText = json[0].map((item) => item[0]).join("");
+      outputTextElem.innerText = translatedText;
+      {
+        /** const translatedText = json[0].map((item) => item[0]).join("");
+      outputTextElem.innerText = translatedText; */
+      }
+      {
+        /**console.log(json);
+      outputTextElem.value = json[0].map((item) => item[0]).join(""); */
+      }
     })
     .catch((error) => {
       console.log(error);
@@ -101,22 +109,34 @@ const uploadDocument = document.querySelector("#upload-document"),
 
 uploadDocument.addEventListener("change", (e) => {
   const file = e.target.files[0];
-  if (
-    file.type === "application/pdf" ||
-    file.type === "text/plain" ||
-    file.type === "application/msword" ||
-    file.type ===
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-  ) {
+  if (file.type === "application/pdf") {
     uploadTitle.innerHTML = file.name;
+
     const reader = new FileReader();
-    reader.readAsText(file);
-    reader.onload = (e) => {
-      inputTextElem.value = e.target.result;
+    reader.onload = async (e) => {
+      const arrayBuffer = e.target.result;
+
+      // Utiliser pdf.js pour extraire le texte du PDF
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      let text = "";
+
+      for (let i = 1; i <= pdf.numPages; i++) {
+        const page = await pdf.getPage(i);
+        const content = await page.getTextContent();
+
+        content.items.forEach((item) => {
+          text += item.str + " ";
+        });
+      }
+
+      // Mettre le texte extrait dans inputTextElem
+      inputTextElem.value = text;
       translate();
     };
+
+    reader.readAsArrayBuffer(file);
   } else {
-    alert("Please upload a valid file");
+    alert("Please upload a valid PDF file");
   }
 });
 
