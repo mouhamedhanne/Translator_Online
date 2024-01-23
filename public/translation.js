@@ -146,18 +146,12 @@ downloadBtn.addEventListener("click", (e) => {
   const outputText = outputTextElem.value;
   const outputLanguage =
     outputLanguageDropdown.querySelector(".selected").dataset.value;
-
   if (outputText) {
-    const pdf = new jsPDF();
-    pdf.text(outputText, 10, 10);
-
-    const url = URL.createObjectURL(pdf.output("blob"));
-
+    const blob = new Blob([outputText], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-
     a.download = `translated-to-${outputLanguage}.pdf`;
     a.href = url;
-
     a.click();
   }
 });
