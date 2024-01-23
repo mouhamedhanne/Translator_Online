@@ -146,12 +146,18 @@ downloadBtn.addEventListener("click", (e) => {
   const outputText = outputTextElem.value;
   const outputLanguage =
     outputLanguageDropdown.querySelector(".selected").dataset.value;
+
   if (outputText) {
-    const blob = new Blob([outputText], { type: "application/pdf" });
-    const url = URL.createObjectURL(blob);
+    const pdf = new jsPDF();
+    pdf.text(outputText, 10, 10);
+
+    const url = URL.createObjectURL(pdf.output("blob"));
+
     const a = document.createElement("a");
+
     a.download = `translated-to-${outputLanguage}.pdf`;
     a.href = url;
+
     a.click();
   }
 });
@@ -168,6 +174,22 @@ const inputChars = document.querySelector("#input-chars");
 inputTextElem.addEventListener("input", (e) => {
   inputChars.innerHTML = inputTextElem.value.length;
 });
+
+{
+  /**downloadBtn.addEventListener("click", (e) => {
+  const outputText = outputTextElem.value;
+  const outputLanguage =
+    outputLanguageDropdown.querySelector(".selected").dataset.value;
+  if (outputText) {
+    const blob = new Blob([outputText], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.download = `translated-to-${outputLanguage}.pdf`;
+    a.href = url;
+    a.click();
+  }
+}); */
+}
 
 /**
   uploadDocument.addEventListener("change", (e) => {
