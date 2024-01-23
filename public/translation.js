@@ -148,40 +148,19 @@ downloadBtn.addEventListener("click", (e) => {
     outputLanguageDropdown.querySelector(".selected").dataset.value;
 
   if (outputText) {
-    // Utilisation de jsPDF pour créer un document PDF
     const pdf = new jsPDF();
     pdf.text(outputText, 10, 10);
 
-    // Création d'une URL à partir du contenu PDF
     const url = URL.createObjectURL(pdf.output("blob"));
 
-    // Création d'un élément <a> pour le téléchargement
     const a = document.createElement("a");
 
-    // Configuration du téléchargement avec le nom de fichier PDF
     a.download = `translated-to-${outputLanguage}.pdf`;
     a.href = url;
 
-    // Déclenchement du téléchargement
     a.click();
   }
 });
-
-{
-  /**downloadBtn.addEventListener("click", (e) => {
-  const outputText = outputTextElem.value;
-  const outputLanguage =
-    outputLanguageDropdown.querySelector(".selected").dataset.value;
-  if (outputText) {
-    const blob = new Blob([outputText], { type: "application/pdf" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.download = `translated-to-${outputLanguage}.pdf`;
-    a.href = url;
-    a.click();
-  }
-}); */
-}
 
 const darkModeCheckbox = document.getElementById("dark-mode-btn");
 function toggleDarkMode() {
@@ -257,3 +236,19 @@ inputTextElem.addEventListener("input", (e) => {
   }
 });
  */
+
+{
+  /**downloadBtn.addEventListener("click", (e) => {
+  const outputText = outputTextElem.value;
+  const outputLanguage =
+    outputLanguageDropdown.querySelector(".selected").dataset.value;
+  if (outputText) {
+    const blob = new Blob([outputText], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.download = `translated-to-${outputLanguage}.pdf`;
+    a.href = url;
+    a.click();
+  }
+}); */
+}
