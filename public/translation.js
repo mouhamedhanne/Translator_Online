@@ -136,7 +136,7 @@ uploadDocument.addEventListener("change", (e) => {
 
     reader.readAsArrayBuffer(file);
   } else {
-    alert("Please upload a valid PDF file");
+    alert("Veuillez télécharger un fichier PDF valide");
   }
 });
 
@@ -147,10 +147,10 @@ downloadBtn.addEventListener("click", (e) => {
   const outputLanguage =
     outputLanguageDropdown.querySelector(".selected").dataset.value;
   if (outputText) {
-    const blob = new Blob([outputText], { type: "text/plain" });
+    const blob = new Blob([outputText], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.download = `translated-to-${outputLanguage}.txt`;
+    a.download = `translated-to-${outputLanguage}.pdf`;
     a.href = url;
     a.click();
   }
