@@ -1,16 +1,25 @@
 "use client";
+import BuyCoffe from "@/app/Assets/Svg/bmc-logo.svg";
+import Image from "next/image";
 
-import React from "react";
 const Transform = () => {
   return (
-    <div>
-      <iframe
-        title="Embedded HTML"
-        src="/index.html"
-        width="100%"
-        height="655px"
-      />
-    </div>
+    <>
+      <div className="relative">
+        <div className="hidden lg:block absolute bottom-10 left-[6rem] lg:left-[32rem]">
+          <Image src={BuyCoffe} alt="buy me a coffe" />
+        </div>
+
+        <div>
+          <iframe
+            title="Embedded HTML"
+            src="/index.html"
+            width="100%"
+            height="700px"
+          />
+        </div>
+      </div>
+    </>
   );
 };
 

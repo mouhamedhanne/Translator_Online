@@ -20,7 +20,10 @@ function page() {
           </div>
 
           <div>
-            <Link href="/">
+            <Link
+              href="https://www.buymeacoffee.com/mouhamedhanne"
+              target="_blank"
+            >
               <Image
                 src={BuyCoffe}
                 alt="buy me a coffe"
@@ -30,7 +33,7 @@ function page() {
           </div>
 
           <div className="flex items-center justify-center space-x-3">
-            <Link href="https://github.com/mouhamedhanne">
+            <Link href="https://github.com/mouhamedhanne" target="_blank">
               {" "}
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
@@ -53,7 +56,4 @@ function page() {
 
 export default page;
 
-{
-  /*
-   */
-}
+
