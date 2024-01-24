@@ -19,7 +19,7 @@ export default function page() {
           </h3>
           <p className="text-sm text-gray-400">
             Inscrivez-vous dès maintenant pour débloquer l'accès à un monde de
-            traduction sans limites.
+            traduction sans limites avec plus de 59 langues
           </p>
         </div>
       </div>

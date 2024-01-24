@@ -216,6 +216,11 @@ body.dark {
   font-size: 12px;
   pointer-events: none;
 }
+
+.card-bottom .down-btn {
+  color: red;
+}
+
 .card-bottom ion-icon {
   font-size: 20px;
 }
@@ -233,6 +238,7 @@ body.dark {
   cursor: pointer;
   background-color: var(--bg-color);
 }
+
 .card-bottom button:hover {
   color: var(--primary-text-color);
   background-color: var(--primary-color);
@@ -314,4 +320,44 @@ body.dark {
   .swap-position ion-icon {
     transform: rotate(90deg);
   }
+}
+
+/* modal */
+
+/* Style de la boîte modale */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contenu de la boîte modale */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #111116;
+  padding: 20px;
+  color: #fefefe;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+/* Bouton de fermeture */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
 }

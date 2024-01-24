@@ -37,7 +37,7 @@
     <div class="container">
       <div class="card input-wrapper">
         <div class="from">
-          <span class="heading">From :</span>
+          <span class="heading">Depuis :</span>
           <div class="dropdown-container" id="input-language">
             <div class="dropdown-toggle">
               <ion-icon name="globe-outline"></ion-icon>
@@ -55,14 +55,14 @@
             id="input-text"
             cols="30"
             rows="10"
-            placeholder="Enter your text here"
+            placeholder="Entrez votre texte ici"
           ></textarea>
           <div class="chars"><span id="input-chars">0</span> / 5000</div>
         </div>
         <div class="card-bottom">
-          <p>Or choose your document!</p>
+          <p>Ou choisissez votre document!</p>
           <label for="upload-document">
-            <span id="upload-title">Choose File</span>
+            <span id="upload-title">Choisir le fichier</span>
             <ion-icon name="cloud-upload-outline"></ion-icon>
             <input type="file" id="upload-document" hidden />
           </label>
@@ -77,7 +77,7 @@
 
       <div class="card output-wrapper">
         <div class="to">
-          <span class="heading">To :</span>
+          <span class="heading">À :</span>
           <div class="dropdown-container" id="output-language">
             <div class="dropdown-toggle">
               <ion-icon name="globe-outline"></ion-icon>
@@ -94,16 +94,23 @@
           id="output-text"
           cols="30"
           rows="10"
-          placeholder="Translated text will appear here"
+          placeholder="Le texte traduit apparaîtra ici"
           disabled
         ></textarea>
         <div class="card-bottom">
-          <p>Download as a document!</p>
-          <button id="download-btn">
-            <span>Download</span>
+          <p>Télécharger sous forme de document!</p>
+          <button id="download-btn" disabled>
+            <span class="down-btn">Pas disponible!</span>
             <ion-icon name="cloud-download-outline"></ion-icon>
           </button>
         </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-message"></p>
       </div>
     </div>
 

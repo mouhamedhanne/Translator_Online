@@ -1,3 +1,7 @@
+const modal = document.getElementById("myModal");
+const modalMessage = document.getElementById("modal-message");
+const closeBtn = document.getElementsByClassName("close")[0];
+
 const dropdowns = document.querySelectorAll(".dropdown-container"),
   inputLanguageDropdown = document.querySelector("#input-language"),
   outputLanguageDropdown = document.querySelector("#output-language");
@@ -129,10 +133,36 @@ uploadDocument.addEventListener("change", (e) => {
         });
       }
 
-      // Mettre le texte extrait dans inputTextElem
-      inputTextElem.value = text;
-      translate();
+      if (text.length > 5000) {
+        modalMessage.innerHTML =
+          "Fichier trop volumineux ! Limite : 5000 caractères.";
+        modal.style.display = "block";
+        uploadTitle.innerHTML = "Choisir le fichier";
+        inputTextElem = "";
+      } else {
+        // Mettre le texte extrait dans inputTextElem
+        inputTextElem.value = text;
+        translate();
+      }
     };
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    {
+      /**
+    if (text.length > 5000) {
+      text = text.slice(0, 5000);
+    }
+  */
+    }
 
     reader.readAsArrayBuffer(file);
   } else {
