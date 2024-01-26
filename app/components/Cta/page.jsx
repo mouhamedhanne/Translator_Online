@@ -15,11 +15,11 @@ export default function page() {
             className="text-2xl font-semibold leading-none
                     tracking-tight"
           >
-            1. Inscription
+            1. Accès Direct
           </h3>
           <p className="text-sm text-gray-400">
-            Inscrivez-vous dès maintenant pour débloquer l'accès à un monde de
-            traduction sans limites avec plus de 59 langues
+            Plongez directement dans le monde de la traduction sans limites !
+            Explorez plus de 59 langues sans passer par l'inscription.
           </p>
         </div>
       </div>

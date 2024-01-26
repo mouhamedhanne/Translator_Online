@@ -35,16 +35,19 @@ function page() {
           <div className="flex items-center justify-center space-x-3">
             <Link href="https://github.com/mouhamedhanne" target="_blank">
               {" "}
-              <FontAwesomeIcon icon={faGithub} className="text-3xl" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-3xl hidden lg:block"
+              />
             </Link>
-            <Link href="/Login">
+            <Link href="/Translation">
               <button
                 className="px-4 py-2 rounded-[10px] font-normal 
                  text-[16px] bg-bg_button text-white
                hover:bg-hover_bg_button transition duration-300
                  ease-in-out transform"
               >
-                Connexion
+                Commencer
               </button>
             </Link>
           </div>
