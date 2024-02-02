@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Online Translator
 
-## Getting Started
+Bienvenue dans la documentation officielle de Online Translator, votre compagnon ultime pour surmonter les barrières linguistiques et explorer un monde sans frontières.
 
-First, run the development server:
+## Aperçu du Projet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Online Translator est une plateforme de traduction en ligne intuitive qui vous permet de convertir du texte ou des fichiers PDF d'une langue à une autre en un clin d'œil.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Utilisation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Traduction de Texte
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Saisissez le Texte :** Entrez le texte que vous souhaitez traduire dans la zone dédiée.
+2. **Langues Source et Cible :** Choisissez la langue source et la langue cible parmi notre large sélection.
+3. **Cliquez sur "Traduire" :** Obtenez instantanément la traduction avec précision et rapidité.
 
-## Learn More
+### Traduction de Fichiers PDF
 
-To learn more about Next.js, take a look at the following resources:
+1. **Téléchargez le PDF :** Importez votre fichier PDF à traduire sur la plateforme.
+2. **Choisissez les Langues :** Indiquez la langue source et la langue cible pour la traduction.
+3. **Cliquez sur "Traduire" :** Obtenez une version traduite du PDF prête à être téléchargée.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fonctionnalités Clés
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Traduction Rapide :** Des résultats instantanés avec une précision maximale.
+- **Langues Multiples :** Prise en charge d'une grande variété de langues pour répondre à vos besoins.
+- **Traduction de Fichiers PDF :** Transformez des documents complets en quelques clics.
+- **Expérience Intuitive :** Interface conviviale pour une utilisation sans effort.
 
-## Deploy on Vercel
+## Pourquoi Online Translator ?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Connectez le Monde :** Facilitez les échanges multilingues et connectez-vous avec le monde entier.
+- **Traduction Polyvalente :** Des conversations quotidiennes aux documents professionnels, tout devient plus accessible.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
