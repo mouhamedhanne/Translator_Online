@@ -1,5 +1,11 @@
-# Online Translator ![Logo Online Translator](https://online-translator.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlogoMax.00d32e45.png&w=256&q=75)
+<p align="center">
+  <img src="https://online-translator.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlogoMax.00d32e45.png&w=256&q=75" alt="Logo Online Translator">
+</p>
 
+![Logo Online Translator](https://online-translator.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlogoMax.00d32e45.png&w=256&q=75)
+
+
+# Online Translator 
 Bienvenue dans la documentation officielle de Online Translator, votre compagnon ultime pour surmonter les barrières linguistiques et explorer un monde sans frontières.
 
 ## Aperçu du Projet
