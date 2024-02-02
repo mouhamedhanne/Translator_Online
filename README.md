@@ -7,7 +7,7 @@
 Bienvenue dans la documentation officielle de Online Translator, votre compagnon ultime pour surmonter les barrières linguistiques et explorer un monde sans frontières.
 
 <p align="center">
-  <img src="public/template-readme.png" alt="Template">
+  <img src="public/images/template-readme.png" alt="Template">
 </p>
 
 ## Aperçu du Projet
