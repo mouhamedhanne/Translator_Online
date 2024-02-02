@@ -6,6 +6,10 @@
 # Online Translator 
 Bienvenue dans la documentation officielle de Online Translator, votre compagnon ultime pour surmonter les barrières linguistiques et explorer un monde sans frontières.
 
+<p align="center">
+  <img src="template-readme.png" alt="Logo Online Translator">
+</p>
+
 ## Aperçu du Projet
 
 Online Translator est une plateforme de traduction en ligne intuitive qui vous permet de convertir du texte ou des fichiers PDF d'une langue à une autre en un clin d'œil.
