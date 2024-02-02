@@ -1,10 +1,6 @@
 <p align="center">
   <img src="https://online-translator.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlogoMax.00d32e45.png&w=256&q=75" alt="Logo Online Translator">
 </p>
-v<p align="center">
-  [<img src="app/Assets/Svg/bmc-logo.svg">](https://www.buymeacoffee.com/mouhamedhanne)
-</p>
-
 
 
 
