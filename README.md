@@ -28,6 +28,10 @@ Online Translator est une plateforme de traduction en ligne intuitive qui vous p
 2. **Choisissez les Langues :** Indiquez la langue source et la langue cible pour la traduction.
 3. **Cliquez sur "Traduire" :** Obtenez une version traduite du PDF prête à être téléchargée.
 
+<p align="center">
+  <img src="app/Assets/Images/traducteur-dark.png" alt="Template">
+</p>
+
 ## Fonctionnalités Clés
 
 - **Traduction Rapide :** Des résultats instantanés avec une précision maximale.
