@@ -14,7 +14,7 @@ export default function page() {
         Essayez gratuitement. Maintenant!
       </h2>
       <Link
-        href="/"
+        href="/Translation"
         className="inline-flex items-center justify-center
         focus-visible:outline-none focus-visible:ring-2
         focus-visible:ring-offset-2 disabled:opacity-50 
