@@ -45,3 +45,5 @@ Online Translator est une plateforme de traduction en ligne intuitive qui vous p
 - **Connectez le Monde :** Facilitez les échanges multilingues et connectez-vous avec le monde entier.
 - **Traduction Polyvalente :** Des conversations quotidiennes aux documents professionnels, tout devient plus accessible.
 
+This project is under [MIT License](LICENSE.md) ✔
+
