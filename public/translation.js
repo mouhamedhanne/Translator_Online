@@ -199,6 +199,8 @@ inputTextElem.addEventListener("input", (e) => {
   inputChars.innerHTML = inputTextElem.value.length;
 });
 
+//download document
+
 {
   /**downloadBtn.addEventListener("click", (e) => {
   const outputText = outputTextElem.value;
@@ -238,6 +240,7 @@ inputTextElem.addEventListener("input", (e) => {
   });
 **/
 
+//upload document
 /**
  * uploadDocument.addEventListener("change", (e) => {
   const file = e.target.files[0];
